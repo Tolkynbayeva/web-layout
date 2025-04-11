@@ -1,0 +1,19 @@
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# IntelliJ
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Mac/OSX
+.DS_Store
+
+# --- Node.js ---
+node_modules/

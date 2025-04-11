@@ -1,0 +1,75 @@
+ /*Услуги*/
+ .section-services {
+	 margin-top: 70px;
+ }
+ 
+ 
+
+.services-item {
+	display: flex;
+	flex-direction: column;
+	margin-right: 25px;
+	margin-bottom: 24px;
+}
+
+.services-block {
+	width: 572px;
+	height: 325px;
+	padding: 200px 112px 40px 45px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 572px 165px;
+	border-radius: 12px;
+	background-color: #fff;
+}
+
+.h3-heading__link {
+	color: #cc9933;
+	font-size: 22px;
+	font-weight: 500;
+	transition: all .3s linear;
+}
+
+.h3-heading__link:hover {
+	color: var(--color-dark);
+	border-bottom: 2px solid #666666;
+}
+
+.h3-heading__link:active {
+	color: #D2691E;
+	border-bottom: 2px solid #D2691E;
+}
+
+.h3-heading__link:focus {
+	outline: 2px solid #cc9933;
+	outline-offset: 5px;
+}
+
+.arrow-services {
+	background: url(../img/arrow-srvices.svg) no-repeat;
+	background-position: 100% 50%;
+	padding-right: 15px;
+}
+
+.arrow-services:hover {
+	background: url(../img/arrow-white.png) no-repeat;
+	background-position: 100% 50%;
+	padding-right: 15px;
+}
+
+.services-block-one {
+	background-image: url("../img/10.jpeg")
+}
+
+.services-block-two {
+	background-image: url("../img/15.jpeg")
+}
+
+.services-block-three {
+	background-image: url("../img/12.jpeg")
+}
+
+.services-block-four {
+	background-image: url("../img/carlo-d-agnolo-aFxSh_l4fbY-unsplash.jpeg")
+}
+

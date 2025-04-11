@@ -1,0 +1,160 @@
+/*Размещение*/
+.section-accommodation {
+	margin-top: 70px;
+}
+
+.accommodation-item {
+	margin-bottom: 25px;
+}
+
+.accommodation-item:last-child {
+	position: relative;
+	width: 373px;
+  min-height: 441px;
+	background: url(../img/41.png) no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: flex-end;
+}
+
+.accommodation-item:last-child:hover {
+	opacity: .9;
+}
+
+.accommodation-block {
+	width: 373px;
+	height: 441px;
+	background-color: var(--color-white);
+	border-radius: 12px;
+}
+
+
+.accommodation-item-img {
+	width: 373px;
+	height: 217px;
+	margin-bottom: 25px;
+}
+
+.accommodation-item-desc {
+	width: 280px;
+	margin-left: 45px;
+	color: #969696;
+}
+
+.item-desc {
+	color: #000000;
+}
+
+.item-desc-price {
+	font-size: 22px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.item-desc-name {
+	margin-left: 45px;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.item-desc-location {
+	margin-left: 45px;
+	margin-bottom: 15px;
+	color: #999999;
+}
+
+.accommodation-item-rooms {
+	margin-left: 45px;
+	padding: 13px 20px;
+	color: var(--color-yellow);
+	font-weight: 700;
+	border-radius: 12px;
+	border: 1px solid #cc9933;
+	transition: background .3s ease, color .2s linear;
+
+}
+
+.accommodation-item-rooms:hover {
+	background-color: var(--color-yellow);
+	color: var(--color-white);
+}
+
+.accommodation-item-rooms:active {
+	background-color: #D2691E;
+	color: #fff;
+	border: 2px solid  #D2691E;
+}
+
+.accommodation-item-rooms:focus {
+	outline: none;
+	background-color: #D3D3D3	;
+	color: #cc9933;
+	border: 2px solid  #cc9933;
+}
+
+.accommodation-item-rating {
+	margin-left: 30px;
+}
+
+.rating-stars {
+	width: 15px;
+	height: 15px;
+}
+
+.rating-stars-empty {
+	width: 15px;
+	height: 15px;
+}
+
+.accommodation-variant-link {
+	display: inline-block;
+	margin-bottom: 52px;
+	margin-left: 40px;
+	padding-right: 20px;
+	font-size: 22px;
+	font-weight: 500;
+	color: var(--color-white);
+	will-change: opacity;
+}
+
+.accommodation-variant-link::before {
+	content: "";
+	position: absolute;
+	top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+	background-color: rgba(241, 241, 241, 0);
+	cursor: pointer;
+	transition: background-color 0.5s;
+}
+
+.accommodation-variant-link:hover {
+	color: var(--color-yellow);
+}
+
+.accommodation-variant-link:active {
+	color: #D2691E;
+}
+
+.accommodation-variant-link:focus {
+	outline: none;
+	color: var(--color-white);
+}
+
+.arrow-accommodation {
+	background: url(../img/arrow-accommodation.svg) no-repeat;
+	background-position: 100%;
+}
+
+.arrow-accommodation:hover {
+	background: url(../img/arrow-srvices.svg) no-repeat;
+	background-position: 100%;
+}
+
+
+
+
+

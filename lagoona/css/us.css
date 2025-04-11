@@ -1,0 +1,9 @@
+/*О нас*/
+.section-us {
+	width: 930px;
+}
+
+.text-us {
+	margin-left: 43px;
+	color: var(--color-dark);
+}

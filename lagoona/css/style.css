@@ -1,0 +1,134 @@
+@font-face {
+	font-family: "Muller"; /* имя шрифта */
+	font-display: swap;/* управления отображением загружаемого шрифта до его полной загрузки
+											swap-отображает резервный шрифт, пока основной грузится */
+	src: 
+		local("MullerRegular"), /* проверяется есть ли шрифт на локальном компьютере пользователя по имени, если нет то поиск осуществляется в других указанных источниках */
+		url("../fonts/MullerRegular.woff2") format("woff2"), /* путь к файлу со шрифтом, woff2-для современного браузера */
+		url("../fonts/MullerRegular.woff") format("woff"); /* woff-формат для менее современного браузера */
+	font-weight: 400; /* устанавливает насколько жирным будет отображаться текст, 400-обычная толщина шрифта*/
+	font-style: normal; /* определяет стиль шрифта*/
+}
+
+@font-face {
+	font-family: "Muller";
+	font-display: swap;
+	src: 
+		local("MullerBold"), 
+		url("../fonts/MullerBold.woff2") format("woff2"),
+		url("../fonts/MullerBold.woff") format("woff");
+	font-weight: 700; /* 700-обозначает жирный шрифт */
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Muller";
+	font-display: swap;
+	src: 
+		local("MullerLight"),
+		url("../fonts/MullerLight.woff2") format("woff2"),
+		url("../fonts/MullerLight.woff") format("woff");
+	font-weight: 300; 
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: "Muller";
+	font-display: swap;
+	src: 
+		local("MullerMedium"),
+		url("../fonts/MullerMedium.woff2") format("woff2"),
+		url("../fonts/MullerMedium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+}
+
+:root {
+	--color-black: #333333;
+	--color-dark: #666666;
+	--color-white: #ffffff;
+	--color-yellow: #cc9933;
+}
+
+html {
+	box-sizing: border-box; /* обозначает, что в обозначенную ширину и высоту входит paddin и border, но не margin */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; /* наследует значение родительского элемента*/
+}
+
+body {
+	min-width: 320px;
+	margin: 0;
+	background-color: #f1f1f1;
+	font-family: "Muller", Arial, sans-serif;
+	font-size: 16px;
+	color: #333333;
+	line-height: 32px;
+	text-align: left;
+}
+
+button, input {
+	font: inherit;
+}
+
+img {
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+}
+
+a {
+text-decoration: none;	
+color: inherit;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+h1, h2, h3, p {
+	padding: 0;
+	margin: 0;
+}
+
+/* container */
+
+.container {
+	max-width: 1200px;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
+
+.h2-heading {
+	margin-left: 44px;
+	margin-bottom: 23px;
+	font-size: 40px;
+	color: #333333;
+	font-weight: 400;
+}
+
+.h3-heading {
+	color: #cc9933;
+	font-size: 22px;
+	font-weight: 500;
+}
+
+
+
+

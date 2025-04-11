@@ -1,0 +1,48 @@
+/*Преимущества*/						
+.section-advantages {
+	margin-top: 70px;
+}
+
+.advantages-block {
+	width: 275px;
+	height: 275px;
+	margin-bottom: 25px;
+	padding: 120px 45px 40px 45px;
+	border-radius: 12px;
+	background: no-repeat 45px 45px;
+	background-size: 65px 60px;
+	background-color: var(--color-white);
+}
+
+.advantages-block-one {
+	background-image: url("../img/bathtub.svg");
+}
+
+.advantages-block-two {
+	background-image: url("../img/hanger.svg")
+}
+
+.advantages-block-three {
+	background-image: url("../img/heating.svg")
+}
+
+.advantages-block-four {
+	background-image: url("../img/hotel-key.svg")
+}
+
+.advantages-block-five {
+	background-image: url("../img/parking.svg")
+}
+
+.advantages-block-six {
+	background-image: url("../img/reception.svg")
+}
+
+.advantages-block-seven {
+	background-image: url("../img/security-box.svg")
+}
+
+.advantages-block-eight {
+	background-image: url("../img/swimming-pool.svg")
+}
+

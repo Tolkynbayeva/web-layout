@@ -1,0 +1,107 @@
+.article-information {
+	display: flex;
+	height: 685px;
+	margin-top: 24px;
+}
+
+/* Контакты */
+.contacts {
+	margin-right: 178px;
+}
+
+.contacts-container {
+	width: 472px;
+	text-align: left;
+	border-radius: 12px;
+	background-color: var(--color-white);
+	padding: 18px 44px 44px 44px;
+}
+
+.contacts-table {
+	max-height: 619px;
+	border-collapse: collapse;
+}
+
+.tr-contacts {
+	line-height: 24px;
+	border-bottom: 1px solid #cccccc;
+	vertical-align: sub;
+
+}
+
+.td-contacts {
+	padding-bottom: 28px;
+}
+
+.th-contacts {
+	padding-top: 20px;
+	padding-right: 39px;
+	font-size: 22px;
+	font-weight: 700;
+	color: var(--color-dark);
+}
+
+
+.contacts-address {
+	color: #585858;
+}
+
+.contacts-phone {
+	color: var(--color-yellow);
+}
+
+.contacts-phone__link,
+.contacts-email__link {
+	display: block;
+}
+
+.contacts-phone__link:hover,
+.contact-email__link:hover {
+	color: var(--color-dark);
+}
+
+
+.contacts-email {
+	color: var(--color-yellow);
+}
+
+.email-text {
+	color: #bcbcbc;
+}
+
+.timetable-text {
+	color: #585858;
+
+}
+
+.contacts-route {
+	width: 214px;
+	height: 70px;
+	margin-top: 41px;
+	text-align: center;
+	border-radius: 12px;
+	border: 1px solid #cc9933;
+	background-color: #ffffff;
+	color: var(--color-yellow);
+	font-weight: 700;
+	cursor: pointer;
+	transition: background-color .3s ease, color .2s linear ;
+}
+
+.contacts-route:hover {
+	background-color: var(--color-yellow);
+	color: var(--color-white);
+}
+
+.contacts-route:active {
+	background-color: #D2691E;
+	color: #fff;
+	border: 2px solid  #D2691E;
+}
+
+.contacts-route:focus {
+	outline: none;
+	background-color: #D3D3D3	;
+	color: #cc9933;
+	border: 2px solid  #cc9933;
+}

@@ -1,0 +1,52 @@
+/*Спецпредложение*/
+.aside-special-offer {
+	width: 595px;
+	height: 580px;
+}
+
+.special-offer-description {
+	padding: 265px 234px 40px 40px;
+	background: url("../img/22.png") no-repeat;
+	background-size: contain;
+	
+}
+
+.special-h3-heading {
+	color: var(--color-white);
+	font-size: 66px;
+	font-weight: 700;
+	line-height: 58px;
+	margin-bottom: 45px;
+}
+
+.special-offer-text {
+	color: #ffcc66;
+	line-height: 32px;
+}
+
+.special-offer-number {
+	opacity: 0.49;
+	color: var(--color-white);
+	font-size: 35px;
+	line-height: 32px;
+	padding-right: 30px;
+}
+
+.arrow-special {
+	background: url(../img/arrow-special.svg) no-repeat 100% 50%;
+	padding-right: 15px;
+}
+
+.number__link:hover {
+	color: var(--color-dark);
+}
+
+.number__link:active {
+	color: #D2691E;
+}
+
+.number__link:focus {
+	outline: 2px solid #cc9933;
+	outline-offset: 5px;
+}
+

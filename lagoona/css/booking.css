@@ -1,0 +1,80 @@
+.aside {
+	display: flex;
+	height: 620px;
+	margin-top: 70px;
+	margin-bottom: 70px;
+}
+
+/*Быстрая бронь*/
+.aside-booking {
+	width: 600px;
+	height: 610px;
+}
+
+
+.booking-input {
+	width: 525px;
+	height: 70px;
+	margin-bottom: 24px;
+	padding-left: 21px;
+	border: transparent;
+	border-radius: 12px;
+	background-color: var(--color-white);
+}
+
+.booking-input:focus {
+	outline: none;
+	background: #FFF8E7;
+	border: 2px solid #cc9933;
+}
+
+input::placeholder {
+	color: #999999;
+}
+
+.booking-submit {
+	width: 159px;
+	height: 70px;
+	margin-right: 30px;
+	border: transparent;
+	border-radius: 12px;
+	background-color: var(--color-yellow);
+	color: var(--color-white);
+	font-weight: 700;
+	cursor: pointer;
+	transition: background .3s ease, color .2s linear;
+}
+
+.booking-submit:hover {
+	background-color: #FFF8E7;
+	color: #cc9933;
+	border: 2px solid #cc9933;
+}
+
+.booking-submit:active {
+	background-color: #D2691E;
+	color: #fff;
+	border: 2px solid  #D2691E;
+}
+
+.booking-submit:focus {
+	outline: none;
+	background-color: #D3D3D3	;
+	color: #cc9933;
+	border: 2px solid  #cc9933;
+}
+
+.booking-offers-number {
+	color: var(--color-yellow);
+}
+
+.booking-offers-desc {
+	color: #999999;
+	font-weight: 700;
+}
+
+.booking-offers {
+	display: inline;
+}
+
+

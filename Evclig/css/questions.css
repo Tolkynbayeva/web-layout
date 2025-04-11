@@ -1,0 +1,192 @@
+.section-questions {
+	margin-bottom: 100px;
+}
+
+.h2-questions {
+  margin-bottom: 39px;
+  font-weight: 400;
+	font-size: 48px;
+	line-height: 59px;
+	text-align: left;
+}
+
+.questions-item {
+  margin-top: -1px;
+}
+
+.ui-widget button,
+.ui-widget-content {
+  font-family: Montserrat;
+  line-height: 32px;
+}
+.ui-accordion .ui-accordion-header {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 32px;
+}
+.ui-state-active {
+  color: var(--color-yellow);
+}
+.ui-accordion-header-icon{
+  display: none;
+}
+.ui-accordion .ui-accordion-content {
+  padding: 0;
+}
+.ui-widget-content {
+  border: 0;
+  width: 57%;
+}
+.questions-button {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  border-top: 1px solid transparent;
+  font-size: 24px;
+  font-weight: 700;
+  min-height: 70px;
+}
+
+.questions-button:first-child {
+  border-top: 1px solid var(--color-grey);
+}
+
+.questions-button:first-child
+.questions-button:hover {
+  color: var(--color-yellow);
+  border-top: 1px solid var(--color-yellow);
+}
+
+.questions-button:focus {
+  color: var(--color-yellow);
+  border-top: 1px solid var(--color-yellow);
+}
+
+
+.button-text {
+  margin-right: 48px;
+  padding: 39px 0;
+  text-align: left;
+}
+
+
+.button-icon {
+  display: block;
+  min-width: 50px;
+  height: 50px;
+  transition: transform .5s ease;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='25' cy='25' r='25' fill='%23ECECEC'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z' fill='%23666666'/%3E%3C/svg%3E%0A");
+}
+
+.questions-button:hover .button-icon,
+.questions-button:focus .button-icon,
+.questions-button:active .button-icon {
+  color: var(--color-yellow);
+  background-image: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='25' cy='25' rx='25' ry='25' fill='%23FF9900'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z' fill='white'/%3E%3C/svg%3E%0A");
+  transform: rotate(45deg);
+}
+
+.accordion-text {
+  margin-bottom: 20px;
+}
+
+/* @media */
+@media (max-width: 1024px) {
+  .section-questions {
+    margin-bottom: 88px;
+  }
+
+
+  .questions-button {
+    font-size: 20px;
+  }
+
+  .button-text {
+    margin-right: 100px;
+    padding: 34px 0;
+  }
+
+  .ui-accordion .ui-accordion-header {
+    font-size: 20px;
+  }
+
+  .ui-widget-content {
+    border: 0;
+    width: 71%;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .section-questions {
+    margin-bottom: 78px;
+  }
+
+  .button-text {
+    margin-right: 48px;
+    padding: 32px 0;
+  }
+}
+
+@media (max-width: 533px) {
+  .section-questions {
+    margin-bottom: 60px;
+  }
+
+  .h2-questions {
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .ui-accordion .ui-accordion-header {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .ui-widget-content {
+    width: 83%;
+  }
+
+  .ui-widget-content {
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  .questions-button {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .button-text {
+    margin-right: 17px;
+    padding: 30px 0;
+  }
+
+  .button-icon {
+    min-width: 30px;
+    height: 30px;
+    background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='15' cy='15' r='15' fill='%23ECECEC'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15.0339 14.4343L15.0339 5.39999L15.5653 5.39999L15.5653 14.4343L20.3297 14.4343L24.5996 14.4343L24.5996 14.9657L15.5653 14.9657L15.5653 24L15.0339 24L15.0339 14.9657L5.99961 14.9657L5.99961 14.4343L15.0339 14.4343Z' fill='%23666666'/%3E%3C/svg%3E%0A");
+  }
+
+  .questions-button:hover .button-icon,
+  .questions-button:focus .button-icon,
+  .questions-button:active .button-icon {
+    background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='15' cy='15' r='15' fill='%23FF9900'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15.0339 14.4343L15.0339 5.39999L15.5653 5.39999L15.5653 14.4343L20.3297 14.4343L24.5996 14.4343L24.5996 14.9657L15.5653 14.9657L15.5653 24L15.0339 24L15.0339 14.9657L5.99961 14.9657L5.99961 14.4343L15.0339 14.4343Z' fill='%23FFFFFF'/%3E%3C/svg%3E%0A");
+  }
+}
+
+

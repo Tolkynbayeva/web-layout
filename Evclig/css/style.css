@@ -1,0 +1,159 @@
+@font-face {
+	font-family: "Montserrat";
+	font-display: swap;
+	src:
+			local("montserrat-bold-webfont"),
+			url("../fonts/montserrat-bold-webfont.woff2") format("woff2"),
+			url("../fonts/montserrat-bold-webfont.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Montserrat";
+	font-display: swap;
+	src:
+			local("montserrat-extrabold-webfont"),
+			url("../fonts/montserrat-extrabold-webfont.woff2") format("woff2"),
+			url("../fonts/montserrat-extrabold-webfont.woff") format("woff");
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Montserrat";
+	font-display: swap;
+	src:
+			local("montserrat-regular-webfont"),
+			url("../fonts/montserrat-regular-webfont.woff2") format("woff2"),
+			url("../fonts/montserrat-regular-webfont.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Montserrat";
+	font-display: swap;
+	src:
+			local("montserrat-semibold-webfont"),
+			url("../fonts/montserrat-semibold-webfont.woff2") format("woff2"),
+			url("../fonts/montserrat-semibold-webfont.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+}
+
+:root {
+	--color-black: #333333;
+	--color-white: #FFFFFF;
+	--color-grey: #CACACA;
+	--color-yellow: #FF9900;
+}
+
+html {
+	box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+button, input {
+	font: inherit;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+text-decoration: none;
+color: inherit;
+cursor: pointer;
+}
+
+button {
+	cursor: pointer;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+h1, h2, h3, p {
+	padding: 0;
+	margin: 0;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
+}
+
+body {
+	min-width: 320px;
+	margin: 0;
+	background: var(--color-white);
+	font-family: "Montserrat", Arial, sans-serif;
+	font-size: 16px;
+	color: var(--color-black);
+	line-height: 32px;
+	text-align: left;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 75px;
+}
+
+.h2-heading {
+	font-weight: 400;
+	font-size: 48px;
+	line-height: 59px;
+}
+
+.h3-heading {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 32px;
+}
+
+p {
+	font-weight: 400;
+}
+
+@media (max-width: 1366px) {
+  .container {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .h2-heading {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
+
+
+
+

@@ -1,0 +1,173 @@
+/* Проектные решения */
+.section-project {
+	margin-bottom: 100px;
+	color: var(--color-white);
+}
+
+.project-content {
+	padding: 103px 0 91px 78px;
+}
+
+.h1-heading {
+	max-width: 850px;
+	margin-bottom: 22px;
+	font-weight: 800;
+	font-size: 70px;
+	line-height: 86px;
+}
+
+.project__text {
+	max-width: 840px;
+	margin-bottom: 90px;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 29px;
+}
+
+.project-button {
+	width: 280px;
+	height: 80px;
+	font-weight: 700;
+	font-size: 23px;
+	border: transparent;
+	background: var(--color-yellow);
+	color: var(--color-white);
+}
+
+
+
+.project-button:hover {
+	background: rgba(255, 153, 0, 0.6);
+}
+
+.project-button:focus {
+  background: rgba(255, 153, 0, 0.7);
+}
+
+.project-button:active {
+	background: #E1670E;
+}
+
+.swiper-wrapper {
+  box-sizing: border-box;
+}
+
+.swiper-slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide1 {
+  background-image: url("../img/low-angle-photo-of-balconies-2462015 1.png");
+}
+
+.slide2 {
+  background-image: url("../img/brown-and-blue-glass-building-2093076 2.jpeg");
+}
+
+.slide3 {
+  background-image: url("../img/apartment-apartment-building-architecture-building-323705 2.jpeg");
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.swiper-pagination-bullet-active {
+  background: #FFFFFF;
+}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap,8px);
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 18px;
+  left: -3px;
+}
+/* @media */
+@media (max-width: 1366px) {
+  .section-project {
+    margin-bottom: 80px;
+  }
+
+  .project-content {
+    padding: 160px 77px;
+  }
+
+  .h1-heading {
+    margin-bottom: 16px;
+    font-size: 60px;
+    line-height: 73px;
+  }
+
+  .project__text {
+    margin-bottom: 60px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+}
+
+@media (max-width: 960px) {
+  .project-content {
+    padding: 160px 40px;
+  }
+
+  .h1-heading {
+    font-size: 50px;
+    line-height: 61px;
+  }
+
+  .project__text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-project {
+    margin-bottom: 60px;
+  }
+
+  .project-content {
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .h1-heading {
+    margin-bottom: 6px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .project__text {
+    margin-bottom: 34px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .project-button {
+    width: 160px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 6px;
+    left: -4px;
+  }
+
+
+}
+
+
+

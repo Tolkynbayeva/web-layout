@@ -1,0 +1,23 @@
+/* Global */
+/* ------------------------------------ */
+@import "global/_variables";
+@import "global/_mixin";
+@import "global/_fonts";
+@import "global/_reboot";
+@import "global/_container";
+@import "global/_visually-hidden";
+
+/* Blocks */
+/* ------------------------------------ */
+@import "blocks/_custom-input";
+@import "blocks/_custom-checkbox";
+@import "blocks/_custom-search";
+@import "blocks/_header";
+@import "blocks/_btn";
+@import "blocks/_main-nav";
+@import "blocks/_hero";
+@import "blocks/_about-company";
+@import "blocks/_application";
+@import "blocks/_aside-nav";
+@import "blocks/_social";
+@import "blocks/_footer";

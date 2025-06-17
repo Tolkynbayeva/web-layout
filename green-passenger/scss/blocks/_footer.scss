@@ -1,0 +1,133 @@
+.footer {
+  box-shadow: 0px -2px 4px 0px $color-black-25;
+  padding: 40px 0 20px;
+
+  @include vp-1439 {
+    padding: 30px 0 15px;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 202px 1fr 202px;
+    align-items: center;
+    margin: 0 0 40px;
+    gap: 20px;
+
+    @include vp-1439 {
+      grid-template-columns: 202px 1fr;
+      margin: 0 0 30px;
+    }
+
+    @include vp-767 {
+      grid-template-columns: 1fr;
+      gap: 25px;
+    }
+  }
+
+  &__left {
+    @include vp-767 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  &__logo-link {
+    display: flex;
+    margin: 0 0 25px;
+  }
+  
+  &__social {
+    margin: 0 0 0 20px;
+
+    @include vp-767 {
+      margin: 0;
+    }
+  }
+  
+  &__nav-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20px 71px;
+    justify-content: center;
+
+    @include vp-1439 {
+      display: none;
+    }
+  }
+  
+  &__nav-link {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+
+    &:hover {
+      color: $color-verdun-green-70;
+    }
+
+    &:focus-visible {
+      outline: 1px solid $color-verdun-green-70;
+      outline-offset: 2px;
+    }
+  }
+  
+  &__right {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    @include vp-767 {
+      align-items: center;
+    }
+  }
+  
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @include vp-767 {
+      align-items: center;
+    }
+  }
+  
+  &__contact-text {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+  }
+  
+  &__contact-link {
+    text-decoration: underline;
+    font-size: 14px;
+    line-height: 20px;
+
+    &:hover {
+      color: $color-verdun-green-70;
+    }
+
+    &:focus-visible {
+      outline: 1px solid $color-verdun-green-70;
+      outline-offset: 2px;
+    }
+  }
+  
+  &__copyright {
+    font-size: 11px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: right;
+    color: $color-verdun-green;
+    margin: 0;
+
+    @include vp-767 {
+      text-align: center;
+    }
+  }
+}

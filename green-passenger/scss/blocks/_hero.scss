@@ -1,0 +1,131 @@
+.hero {
+  background-color: $color-tara-80;
+  padding: 105px 0;
+  margin: 0 0 60px;
+  min-height: calc(100vh - 182px);
+  display: flex;
+  align-items: center;
+
+  @include vp-1439 {
+    min-height: unset;
+    padding: 55px 0;
+  }
+
+  @include vp-767 {
+    padding: 40px 0 260px;
+    position: relative;
+    margin: 0 0 30px;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 640px;
+    gap: 55px;
+    align-items: center;
+
+    @include vp-1439 {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  &__inner {
+    @include vp-767 {
+      z-index: 1;
+    }
+  }
+
+  &__text {
+    font-size: 34px;
+    line-height: 40px;
+    font-weight: 700;
+    color: $color-verdun-green;
+    margin: 0 0 40px 0;
+    letter-spacing: -0.05em;
+
+    @include vp-1439 {
+      font-size: 26px;
+      line-height: 32px;
+      margin: 0 0 36px;
+    }
+
+    @include vp-767 {
+      font-size: 22px;
+      line-height: 26px;
+      text-align: center;
+      margin: 0 0 15px;
+    }
+  }
+  
+  &__slogan {
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0 0 50px 0;
+    color: $color-verdun-green;
+
+    @include vp-1439 {
+      font-size: 18px;
+      line-height: 24px;
+      margin: 0 0 30px;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 18px;
+      text-align: center;
+      margin: 0 0 25px;
+    }
+  }
+  
+  &__btn {
+    width: 420px;
+
+    @include vp-1439 {
+      width: 250px;
+      margin: 0 auto;
+    }
+
+    @include vp-767 {
+      width: 180px;
+    }
+  }
+  
+  &__gallery-list {
+    display: grid;
+    grid-template-columns: 305px 300px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 50px 35px;
+
+    @include vp-1439 {
+      display: none;
+    }
+
+    @include vp-767 {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__gallery-item {
+    @include vp-767 {
+      display: none;
+    }
+
+    &--size-xl {
+      grid-row: span 2;
+
+      @include vp-767 {
+        display: block;
+        grid-row: unset;
+        width: 255px;
+        height: 281px;
+      }
+    }
+  }
+}
+

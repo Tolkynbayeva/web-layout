@@ -1,0 +1,91 @@
+.aside-nav {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: $color-solitude;
+
+  @include vp-1439 {
+    padding: 20px 30px;
+  }
+}
+
+.aside-nav__heading {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  margin: 0 0 25px;
+  text-align: center;
+  color: $color-verdun-green;
+
+  @include vp-1439 {
+    font-size: 15px;
+    line-height: 20px;
+    margin: 0 0 20px;
+  }
+
+  @include vp-767 {
+    font-size: 12px;
+    line-height: 14px;
+    margin: 0 0 15px;
+  }
+}
+
+.aside-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+
+  @include vp-1439 {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  @include vp-767 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 24px;
+  }
+}
+
+.aside-nav__link {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  @include vp-1439 {
+    gap: 10px;
+  }
+
+  svg {
+    @include vp-1439 {
+      width: 30px;
+      height: 45px;
+    }
+
+    @include vp-767 {
+      width: 36px;
+      height: 40px;
+    }
+  }
+}
+
+.aside-nav__link-text {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $color-verdun-green;
+
+  @include vp-1439 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  @include vp-767 {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}

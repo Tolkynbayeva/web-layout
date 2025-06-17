@@ -1,0 +1,39 @@
+.main-nav {
+  background-color: $color-saltpan;
+  padding: 28px 0;
+
+  @include vp-1439 {
+    display: none;
+  }
+  
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 55px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  &__link:hover {
+    color: $color-verdun-green-70;
+  }
+  
+  &__link:focus-visible {
+    outline: 1px solid $color-verdun-green-70;
+    outline-offset: 2px;
+  }
+}

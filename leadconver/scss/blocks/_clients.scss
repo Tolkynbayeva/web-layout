@@ -1,0 +1,42 @@
+.clients {
+  padding: 120px 0 0;
+
+  &__title {
+    font-family: $ff-montserrat;
+    font-size: 48px;
+    line-height: 52px;
+    letter-spacing: 0.06em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 20px;
+  }
+
+  &__highlights {
+    color: $color-orange-juice;
+  }
+
+  &__text {
+    font-size: 32px;
+    line-height: 39px;
+    margin: 0 auto 40px;
+    color: $color-grey;
+    max-width: 637px;
+    text-align: center;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  &__item {
+    background-color: $color-light-grey;
+    border-radius: 30px;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

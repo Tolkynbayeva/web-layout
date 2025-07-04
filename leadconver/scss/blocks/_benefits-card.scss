@@ -1,0 +1,44 @@
+.benefits-card {
+  background-color: $color-light-grey;
+  padding: 60px 40px 40px;
+  border-radius: 30px;
+  position: relative;
+  min-height: 349px;
+
+  &__content {
+    max-width: 466px;
+  }
+
+  &__title {
+    margin: 0 0 20px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    display: flex;
+    gap: 30px;
+  }
+
+  &__icon {
+    transform: rotate(20deg);
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 24px;
+    line-height: 29px;
+    color: $color-grey;
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  &__img-bg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}

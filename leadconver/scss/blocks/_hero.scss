@@ -1,0 +1,62 @@
+.hero {
+  padding: 60px 0 0;
+  background-color: $color-light-grey;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 801px 791px;
+    align-items: center;
+    gap: 128px;
+    margin: 0 0 60px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 80px;
+    line-height: 80px;
+    font-family: $ff-montserrat;
+    letter-spacing: 0.08em;
+  }
+
+  &__highlight {
+    color: $color-orange-juice;
+  }
+
+  &__text-wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  &__text {
+    max-width: 525px;
+    margin: 0;
+    font-size: 32px;
+    line-height: 39px;
+  }
+
+  &__img-wrapper {
+    position: relative;
+  }
+
+  &__icon {
+    position: absolute;
+  }
+
+  &__icon--left {
+    left: -3.5%;
+    bottom: 15.5%;
+  }
+
+  &__icon--right {
+    right: -4%;
+    top: 21.5%;
+    transform: rotate(-8deg);
+  }
+}

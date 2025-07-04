@@ -1,0 +1,21 @@
+/* Global */
+/* ------------------------------------ */
+@import "global/_normalize";
+@import "global/_fonts";
+@import "global/_variables";
+@import "global/_reboot";
+@import "global/_container";
+@import "global/_visually-hidden";
+
+/* Blocks */
+/* ------------------------------------ */
+@import "blocks/_main-nav";
+@import "blocks/_btn";
+@import "blocks/_header";
+@import "blocks/_hero";
+@import "blocks/_breadcrumbs";
+@import "blocks/_leads-benefits";
+@import "blocks/_benefits-card";
+@import "blocks/_price";
+@import "blocks/additional";
+@import "blocks/clients";

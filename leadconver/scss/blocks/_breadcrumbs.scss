@@ -1,0 +1,22 @@
+.breadcrumbs {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(6, 280px);
+    gap: 20px;
+    justify-content: center;
+  }
+
+  &__link {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 14px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    background-color: $color-white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+}

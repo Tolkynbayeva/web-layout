@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="icon-tg" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_753_598)">
+      <path
+        d="M34 0H6C2.68629 0 0 2.68629 0 6V34C0 37.3137 2.68629 40 6 40H34C37.3137 40 40 37.3137 40 34V6C40 2.68629 37.3137 0 34 0Z"
+        fill="#37AEE2" />
+      <path d="M15.5469 31.5625C14.6875 31.5625 14.7656 31.25 14.5312 30.4688L12.0312 22.2656L31.1719 11.0156"
+        fill="#C8DAEA" />
+      <path d="M15.5469 31.5625C16.0938 31.5625 16.4062 31.25 16.7969 30.9375L20.3125 27.5781L15.9375 24.9219"
+        fill="#A9C9DD" />
+      <path
+        d="M15.9375 24.922L26.4844 32.6563C27.5781 33.3595 28.5156 32.9688 28.8281 31.5626L33.125 11.4063C33.5156 9.6876 32.4219 8.90635 31.25 9.45322L6.17185 19.1407C4.53123 19.7657 4.53123 20.7813 5.85935 21.172L12.3437 23.2032L27.1875 13.7501C27.8906 13.3595 28.5156 13.5157 28.0469 14.0626"
+        fill="#F6FBFE" />
+    </g>
+    <defs>
+      <clipPath id="clip0_753_598">
+        <rect width="40" height="40" fill="white" />
+      </clipPath>
+    </defs>
+  </symbol>
+  <symbol id="icon-star" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M25.8157 0L35.1112 23.2318L60 25.8157L36.7682 35.1112L34.1843 60L24.8888 36.7682L0 34.1843L23.2318 24.8888L25.8157 0Z"
+      fill="url(#paint0_linear_753_562)" />
+    <defs>
+      <linearGradient id="paint0_linear_753_562" x1="0" y1="30" x2="60" y2="30" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#FF6600" />
+        <stop offset="0.274" stop-color="#F26659" />
+        <stop offset="0.374" stop-color="#F06177" />
+        <stop offset="0.484" stop-color="#E65D97" />
+        <stop offset="0.714" stop-color="#CA46D2" />
+        <stop offset="1" stop-color="#8D13F9" />
+      </linearGradient>
+    </defs>
+  </symbol>
+  <symbol id="icon-bg" viewBox="0 0 364 245" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_8749_6)">
+      <ellipse cx="228.937" cy="181.001" rx="186.621" ry="147.377" transform="rotate(-19.4044 228.937 181.001)"
+        fill="#2D2D2D" />
+    </g>
+    <defs>
+      <clipPath id="clip0_8749_6">
+        <rect width="364" height="245" rx="30" fill="white" />
+      </clipPath>
+    </defs>
+  </symbol>
+  <symbol id="icon-star-color" viewBox="0 0 56 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M35.5026 0.5L33.5229 25.3113L56 36.0026L31.1887 34.0229L20.4974 56.5L22.4771 31.6887L0 20.9974L24.8113 22.9771L35.5026 0.5Z"
+      fill="currentColor" />
+  </symbol>
+  <symbol id="icon-check" viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M2 9.72581L10.5 18.5L26 2.5" stroke="currentColor" stroke-width="4" stroke-linecap="round"
+      stroke-linejoin="round" />
+  </symbol>
+</svg>

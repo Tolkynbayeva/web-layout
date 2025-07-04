@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color-white;
+  color: $color-dark-grey;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  font-family: $ff-inter;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: $color-grey;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}

@@ -1,0 +1,66 @@
+.additional {
+  padding: 110px 0 0;
+
+  &__title {
+    font-size: 48px;
+    line-height: 52px;
+    margin: 0 0 40px;
+    text-align: center;
+    font-family: $ff-montserrat;
+    letter-spacing: 0.06em;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 730px 730px;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  &__card {
+    padding: 40px;
+    background-color: $color-light-grey;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__card-content {
+    flex-grow: 1;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 0 0 35px;
+  }
+
+  &__card-title {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 36px;
+    line-height: 42px;
+    font-family: $ff-montserrat;
+    letter-spacing: 0.07em;
+    margin: 0;
+  }
+
+  &__card-text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    font-family: $ff-inter;
+    color: $color-dark-grey;
+  }
+
+
+  &__card-number {
+    background: linear-gradient(90deg, #FF6600 0%, #F26659 27.4%, #F06177 37.4%, #E65D97 48.4%, #CA46D2 71.4%, #8D13F9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: $ff-montserrat;
+    font-size: 36px;
+    line-height: 39px;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+  }
+}

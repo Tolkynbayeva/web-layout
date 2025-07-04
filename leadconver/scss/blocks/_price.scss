@@ -1,0 +1,126 @@
+.price {
+  padding: 120px 0 0 0;
+
+  &__title {
+    font-size: 48px;
+    line-height: 52px;
+    font-family: $ff-montserrat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 20px;
+    letter-spacing: 0.07em;
+  }
+
+  &__highlight {
+    color: $color-orange-juice;
+  }
+
+  &__text {
+    font-size: 32px;
+    line-height: 39px;
+    margin: 0 auto 60px;
+    text-align: center;
+    color: $color-grey;
+    max-width: 1086px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  &__card {
+    padding: 40px;
+    background-color: $color-light-grey;
+    border-radius: 30px;
+    min-height: 813px;
+    display: flex;
+    flex-direction: column;
+
+    &--black {
+      background-color: $color-dark-grey;
+
+      .price__card-tag {
+        color: $color-white;
+        border-color: $color-white;
+      }
+
+      .price__card-icon,
+      .price__card-title,
+      .price__card-check,
+      .price__card-desc {
+        color: $color-white;
+      }
+    }
+  }
+
+
+  &__card-top {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 0 0 30px;
+  }
+
+  &__card-tag {
+    padding: 10px 20px;
+    border: 1px solid $color-dark-grey;
+    border-radius: 20px;
+    font-size: 32px;
+    line-height: 39px;
+  }
+
+  &__card-title {
+    font-family: $ff-montserrat;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.05em;
+    margin: 0 0 20px;
+  }
+
+  &__card-number {
+    background: linear-gradient(90deg, #FF6600 0%, #F26659 27.4%, #F06177 37.4%, #E65D97 48.4%, #CA46D2 71.4%, #8D13F9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__card-text {
+    margin: 0 0 30px;
+    font-size: 24px;
+    line-height: 29px;
+    color: $color-grey;
+    max-width: 424px;
+  }
+
+  &__card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 0 20px;
+  }
+
+  &__card-item {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  &__card-check {
+    flex-shrink: 0;
+  }
+
+  &__card-desc {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  &__card-item--highlights .price__card-desc {
+    font-weight: 700;
+  }
+
+  &__btn {
+    margin-top: auto;
+  }
+}

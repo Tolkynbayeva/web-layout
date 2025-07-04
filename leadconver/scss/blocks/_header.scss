@@ -1,0 +1,29 @@
+.header {
+  padding: 6px 0;
+  background-color: $color-dark-grey;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+
+  &__content {
+    margin-right: -70px;
+    padding-right: 30px;
+    display: grid;
+    grid-template-columns: 1fr 680px 1fr;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__contacts {
+    display: flex;
+    gap: 14px;
+    justify-self: end;
+    align-items: center;
+  }
+
+  &__contact-phone {
+    font-size: 32px;
+    line-height: 39px;
+    color: $color-white;
+  }
+}

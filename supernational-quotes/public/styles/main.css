@@ -1,0 +1,72 @@
+:root {
+  --card-height: 65vh;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+
+body {
+  min-height: 100vh;
+  background: #212534;
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: white;
+  font-family: "Titan One", cursive;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.card-wrapper {
+  display: flex;
+  gap: 15px;
+}
+
+.card {
+  border-radius: 6px;
+}
+
+.card:hover:before,
+.card:hover:after {
+  animation: none;
+  opacity: 0;
+}
+
+img {
+  object-fit: contain;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.quote-text {
+  font-size: 1.5em;
+  color: rgb(88 199 250 / 100%);
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+.quote-episodes {
+  font-size: 14px;
+  height: 160px;
+  overflow: scroll;
+}
+
+a {
+  color: #212534;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.user {
+  color: white;
+  font-size: 24px;
+  font-family: "Titan One", cursive;
+  margin: 0 0 20px;
+}

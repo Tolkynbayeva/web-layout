@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supernational</title>
+  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Titan+One&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <h1>Quote of the day</h1>
+  <div class="card-wrapper">
+    <div class="card">
+      <img src="<%= locals.characterImg %>" alt="<%= locals.name %>">
+    </div>
+
+    <div>
+      <p class="user">
+        <%= locals.characterName %>
+      </p>
+      <ul class="quote-episodes">
+        <% data.forEach(episode=> { %>
+          <li class="quote-text">
+            <%= episode.title %>
+          </li>
+          <% }); %>
+      </ul>
+    </div>
+  </div>
+
+  <p class="quote-text">
+    <%= locals.quote %>
+  </p>
+
+
+</body>
+
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+  <link rel="shortcut icon" href="favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="preload" href="fonts/Unbounded-Light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Unbounded-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Unbounded-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Блог - Газпромбанк.Тех</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <a class="header__logo" href="#">
+          <svg class="header__logo-icon" width="354" height="19" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-logo-header"></use>
+          </svg>
+        </a>
+        <button class="header__burger burger">
+          <svg width="32" height="32" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Вакансии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">события</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--active" href="#">блог</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">стартапам</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">digital start</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header__social">
+          <li class="header__social-item">
+            <a class="header__social-link" href="#" aria-label="Ссылка на VK">
+              <svg width="24" height="24" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="blog-hero">
+      <div class="container">
+        <div class="blog-hero__wrapper">
+          <h1 class="blog-hero__title">Блог</h1>
+          <p class="blog-hero__description">Узнай, как мы запускаем и развиваем IT-продукты в Газпромбанке. Знакомься с
+            последними новостями из мира финтеха.</p>
+        </div>
+      </div>
+    </section>
+    <section class="blog-filter">
+      <h2 class="visually-hidden">Фильтр</h2>
+      <div class="container">
+        <form class="blog-filter__form" action="#">
+          <input class="visually-hidden blog-filter__field" type="checkbox" id="all" name="filter" value="all" checked>
+          <label class="blog-filter__label" for="all">ВСЕ</label>
+          <input class="visually-hidden blog-filter__field" type="checkbox" id="devops" name="filter" value="devops">
+          <label class="blog-filter__label" for="devops">DevOps</label>
+          <input class="visually-hidden blog-filter__field" type="checkbox" id="ux" name="filter" value="ux">
+          <label class="blog-filter__label" for="ux">UX</label>
+          <input class="visually-hidden blog-filter__field" type="checkbox" id="data-analytics" name="filter" value="data-analytics">
+          <label class="blog-filter__label" for="data-analytics">Анализ данных</label>
+          <input class="visually-hidden blog-filter__field" type="checkbox" id="architecture" name="filter" value="architecture">
+          <label class="blog-filter__label" for="architecture">Архитектура</label>
+          <input class="visually-hidden blog-filter__field" type="checkbox" id="gamification" name="filter" value="gamification">
+          <label class="blog-filter__label" for="gamification">Геймификация</label>
+          <input class="visually-hidden blog-filter__field" type="checkbox" id="dbo" name="filter" value="dbo">
+          <label class="blog-filter__label" for="dbo">ДБО</label>
+          <input class="visually-hidden blog-filter__field" type="checkbox" id="design" name="filter" value="design">
+          <label class="blog-filter__label" for="design">Дизайн</label>
+          <input class="visually-hidden blog-filter__field" type="checkbox" id="innovation" name="filter" value="innovation">
+          <label class="blog-filter__label" for="innovation">Инновации</label>
+          <input class="visually-hidden blog-filter__field" type="checkbox" id="research" name="filter" value="research">
+          <label class="blog-filter__label" for="research">Исследования</label>
+          <input class="visually-hidden blog-filter__field" type="checkbox" id="career" name="filter" value="career">
+          <label class="blog-filter__label" for="career">Карьера</label>
+          <input class="visually-hidden blog-filter__field" type="checkbox" id="marketing" name="filter" value="marketing">
+          <label class="blog-filter__label" for="marketing">Маркетинг</label>
+          <input class="visually-hidden blog-filter__field" type="checkbox" id="management" name="filter" value="management">
+          <label class="blog-filter__label" for="management">Менеджмент</label>
+          <input class="visually-hidden blog-filter__field" type="checkbox" id="report" name="filter" value="report">
+          <label class="blog-filter__label" for="report">Отчет</label>
+          <input class="visually-hidden blog-filter__field" type="checkbox" id="support" name="filter" value="support">
+          <label class="blog-filter__label" for="support">Поддержка</label>
+          <input class="visually-hidden blog-filter__field" type="checkbox" id="promotion" name="filter" value="promotion">
+          <label class="blog-filter__label" for="promotion">Продвижение</label>
+          <input class="visually-hidden blog-filter__field" type="checkbox" id="development" name="filter" value="development">
+          <label class="blog-filter__label" for="development">Разработка</label>
+          <input class="visually-hidden blog-filter__field" type="checkbox" id="services" name="filter" value="services">
+          <label class="blog-filter__label" for="services">Сервисы</label>
+          <input class="visually-hidden blog-filter__field" type="checkbox" id="systems" name="filter" value="systems">
+          <label class="blog-filter__label" for="systems">Системы</label>
+          <input class="visually-hidden blog-filter__field" type="checkbox" id="event" name="filter" value="event">
+          <label class="blog-filter__label" for="event">Событие</label>
+          <input class="visually-hidden blog-filter__field" type="checkbox" id="testing" name="filter" value="testing">
+          <label class="blog-filter__label" for="testing">Тестирование</label>
+          <input class="visually-hidden blog-filter__field" type="checkbox" id="technology" name="filter" value="technology">
+          <label class="blog-filter__label" for="technology">Технологии</label>
+          <input class="visually-hidden blog-filter__field" type="checkbox" id="fintech" name="filter" value="fintech">
+          <label class="blog-filter__label" for="fintech">Финтех</label>
+        </form>
+
+      </div>
+    </section>
+    <section class="blog-list">
+      <h2 class="visually-hidden">Публикации</h2>
+      <div class="container">
+        <ul class="blog-list__grid">
+          <li class="blog-list__item">
+            <a class="blog-list__link" href="#">
+              <div class="news-card">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="images/blog-img-mob-1.webp 1x, images/blog-img-mob-1@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1023px)"
+                      srcset="images/blog-img-tablet-1.webp 1x, images/blog-img-tablet-1@2x.webp 2x">
+                    <source type="image/webp" srcset="images/blog-img-1.webp 1x, images/blog-img-1@2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="images/blog-img-mob-1.png 1x, images/blog-img-mob-1@2x.png 2x">
+                    <source media="(max-width: 1023px)"
+                      srcset="images/blog-img-tablet-1.png 1x, images/blog-img-tablet-1@2x.png 2x">
+                    <img class="news-card__img" src="images/blog-img-1.png" srcset="images/blog-img-1@2x.png 2x"
+                      width="228" height="228" alt="">
+                  </picture>
+                  <ul class="news-card__tags">
+                    <li class="news-card__tag">Карьера</li>
+                    <li class="news-card__tag">Разработка</li>
+                  </ul>
+                  <div class="news-card__content">
+                    <p class="news-card__date">14/06/2024</p>
+                    <h3 class="news-card__title">Kubernetes: шпаргалка для собеседования. Часть&nbsp;1</h3>
+                  </div>
+              </div>
+            </a>
+          </li>
+          <li class="blog-list__item">
+            <a class="blog-list__link" href="#">
+              <div class="news-card news-card--top">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="images/blog-img-mob-2.webp 1x, images/blog-img-mob-2@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1023px)"
+                      srcset="images/blog-img-tablet-2.webp 1x, images/blog-img-tablet-2@2x.webp 2x">
+                    <source type="image/webp" srcset="images/blog-img-2.webp 1x, images/blog-img-2@2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="images/blog-img-mob-2.png 1x, images/blog-img-mob-2@2x.png 2x">
+                    <source media="(max-width: 1023px)"
+                      srcset="images/blog-img-tablet-2.png 1x, images/blog-img-tablet-2@2x.png 2x">
+                    <img class="news-card__img" src="images/blog-img-2.png" srcset="images/blog-img-2@2x.png 2x" width="228"
+                      height="228" alt="">
+                  </picture>
+                  <ul class="news-card__tags">
+                    <li class="news-card__tag">Карьера</li>
+                    <li class="news-card__tag">Разработка</li>
+                  </ul>
+                  <div class="news-card__content">
+                    <p class="news-card__date">03/06/2024</p>
+                    <h3 class="news-card__title">С&nbsp;завода в&nbsp;ИТ: почему менять карьерный трек никогда не
+                      поздно</h3>
+                  </div>
+              </div>
+            </a>
+          </li>
+          <li class="blog-list__item">
+            <a class="blog-list__link" href="article.html">
+              <div class="news-card">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="images/blog-img-mob-3.webp 1x, images/blog-img-mob-3@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1023px)"
+                      srcset="images/blog-img-tablet-3.webp 1x, images/blog-img-tablet-3@2x.webp 2x">
+                    <source type="image/webp" srcset="images/blog-img-3.webp 1x, images/blog-img-3@2x.webp 2x">
+                    <source media="(max-width: 767px)"
+                      srcset="images/blog-img-mob-3.png 1x, images/blog-img-mob-3@2x.png 2x">
+                    <source media="(max-width: 1023px)"
+                      srcset="images/blog-img-tablet-3.png 1x, images/blog-img-tablet-3@2x.png 2x">
+                    <img class="news-card__img" src="images/blog-img-3.png" srcset="images/blog-img-3@2x.png 2x" width="228"
+                      height="228" alt="">
+                  </picture>
+                  <ul class="news-card__tags">
+                    <li class="news-card__tag">Карьера</li>
+                  </ul>
+                  <div class="news-card__content">
+                    <p class="news-card__date">27/05/2024</p>
+                    <h3 class="news-card__title">Как стать идеальным кандидатом на&nbsp;собеседовании
+                      и&nbsp;повысить шансы&nbsp;на...</h3>
+                  </div>
+              </div>
+            </a>
+          </li>
+          <li class="blog-list__item">
+            <a class="blog-list__link" href="#">
+              <div class="news-card">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="images/blog-img-mob-4.webp 1x, images/blog-img-mob-4@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="images/blog-img-tablet-4.webp 1x, images/blog-img-tablet-4@2x.webp 2x">
+                  <source type="image/webp" srcset="images/blog-img-4.webp 1x, images/blog-img-4@2x.webp 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="images/blog-img-mob-4.png 1x, images/blog-img-mob-4@2x.png 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="images/blog-img-tablet-4.png 1x, images/blog-img-tablet-4@2x.png 2x">
+                  <img class="news-card__img" src="images/blog-img-4.png" srcset="images/blog-img-4@2x.png 2x" width="228"
+                    height="228" alt="">
+                </picture>
+                <ul class="news-card__tags">
+                  <li class="news-card__tag">Маркетинг</li>
+                  <li class="news-card__tag">Системы</li>
+                </ul>
+                <div class="news-card__content">
+                  <p class="news-card__date">23/05/2024</p>
+                  <h3 class="news-card__title">Переход на&nbsp;новую платформу CRM: Газпромбанк принимает
+                    вызов</h3>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="blog-list__item">
+            <a class="blog-list__link" href="#">
+              <div class="news-card news-card--top">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="images/blog-img-mob-5.webp 1x, images/blog-img-mob-5@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="images/blog-img-tablet-5.webp 1x, images/blog-img-tablet-5@2x.webp 2x">
+                  <source type="image/webp" srcset="images/blog-img-5.webp 1x, images/blog-img-5@2x.webp 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="images/blog-img-mob-5.png 1x, images/blog-img-mob-5@2x.png 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="images/blog-img-tablet-5.png 1x, images/blog-img-tablet-5@2x.png 2x">
+                  <img class="news-card__img" src="images/blog-img-5.png" srcset="images/blog-img-5@2x.png 2x" width="228"
+                    height="228" alt="">
+                </picture>
+                <ul class="news-card__tags">
+                  <li class="news-card__tag">Маркетинг</li>
+                  <li class="news-card__tag">Системы</li>
+                </ul>
+                <div class="news-card__content">
+                  <p class="news-card__date">16/05/2024</p>
+                  <h3 class="news-card__title">CRM для розницы: растет и&nbsp;меняется вместе с&nbsp;бизнесом</h3>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="blog-list__item">
+            <a class="blog-list__link" href="#">
+              <div class="news-card">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="images/blog-img-mob-6.webp 1x, images/blog-img-mob-6@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="images/blog-img-tablet-6.webp 1x, images/blog-img-tablet-6@2x.webp 2x">
+                  <source type="image/webp" srcset="images/blog-img-6.webp 1x, images/blog-img-6@2x.webp 2x">
+                  <source media="(max-width: 767px)"
+                    srcset="images/blog-img-mob-6.png 1x, images/blog-img-mob-6@2x.png 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="images/blog-img-tablet-6.png 1x, images/blog-img-tablet-6@2x.png 2x">
+                  <img class="news-card__img" src="images/blog-img-6.png" srcset="images/blog-img-6@2x.png 2x" width="228"
+                    height="228" alt="">
+                </picture>
+                <ul class="news-card__tags">
+                  <li class="news-card__tag">Геймификация</li>
+                </ul>
+                <div class="news-card__content">
+                  <p class="news-card__date">07/05/2024</p>
+                  <h3 class="news-card__title">Геймификация процессов: как в&nbsp;Газпромбанке создают игры для
+                    сотрудников</h3>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <button class="blog-list__more" type="button">Ещё публикации</button>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__columns">
+        <div class="footer__column">
+          <h2 class="footer__title">Напиши нам, вот&nbsp;наши контакты</h2>
+        </div>
+        <div class="footer__column">
+          <div class="footer__contacts">
+            <span class="footer__contacts-title">Почта:</span>
+            <a class="footer__contacts-link" href="mailto:space@gazprombank.ru">space @gazprombank.ru</a>
+          </div>
+          <div class="footer__contacts">
+            <span class="footer__contacts-title">Адрес:</span>
+            <a class="footer__contacts-link" href="#">Москва, ул.&nbsp;Коровий Вал, 5</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__columns">
+        <div class="footer__column">
+          <a class="footer__logo" href="#">
+            <svg class="footer__logo-icon" width="354" height="19" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-logo-header"></use>
+            </svg>
+          </a>
+          <p class="footer__copyright">© 1990-2024, Банк ГПБ (АО) Генеральная лицензия Банка России №354, 117420, г.
+            Москва, ул.&nbsp;Наметкина, д. 16, корпус 1. <a href="#" class="footer__copyright-link">Политика обработки и
+              защиты персональных данных</a>
+          </p>
+        </div>
+        <div class="footer__column">
+          <div class="footer__navigation">
+            <div class="footer__navigation-block">
+              <a href="#" class="footer__navigation-link">Вакансии</a>
+              <a href="#" class="footer__navigation-link">События</a>
+              <a href="#" class="footer__navigation-link">Блог</a>
+            </div>
+            <div class="footer__navigation-block">
+              <a href="#" class="footer__navigation-link">Стартапам</a>
+              <a href="#" class="footer__navigation-link">Digital start</a>
+            </div>
+            <div class="footer__navigation-block">
+              <a href="#" class="footer__navigation-link">Вконтакте</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

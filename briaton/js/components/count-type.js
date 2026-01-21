@@ -1,19 +1,18 @@
-import loadProducts from "./load-products.js";
-
-export default async function countType() {
+export default async function initCountType(data) {
   const checkboxs = document.querySelectorAll('input[name="type"]');
-  const data = await loadProducts();
 
   checkboxs.forEach((checkbox) => {
-    let count = 0
+    let count = 0;
 
     data.forEach((item) => {
       if (item.type.includes(checkbox.value)) {
-        count++
+        count++;
       }
     });
 
-    const countEl = checkbox.closest('.custom-checkbox').querySelector('.custom-checkbox__count')
-    countEl.textContent = count
+    const countEl = checkbox
+      .closest(".custom-checkbox")
+      .querySelector(".custom-checkbox__count");
+    countEl.textContent = count;
   });
 }

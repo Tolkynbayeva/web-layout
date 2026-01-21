@@ -7,16 +7,15 @@ import {
   getTotalPages,
   PER_PAGE,
 } from "./catalog-state.js";
-import loadProducts from "./load-products.js";
 
-export default async function initCatalog() {
-  const listEl = document.querySelector('.catalog__list');
+export default async function initCatalog(data) {
+  const listEl = document.querySelector(".catalog__list");
   const paginationEl = document.querySelector(".catalog__pagination");
   const selectEl = document.querySelector(".catalog__sort-select");
   const statuses = document.querySelectorAll('input[name="status"]');
   const typeCheckboxes = document.querySelectorAll('input[name="type"]');
+  const catalogForm = document.querySelector(".catalog-form");
 
-  const data = await loadProducts();
   let currPage = 1;
 
   function getStatusMode() {
@@ -24,7 +23,9 @@ export default async function initCatalog() {
   }
 
   function getSelectedTypes() {
-    return [...typeCheckboxes].filter((c) => c.checked).map((c) => c.value);
+    return [...typeCheckboxes]
+      .filter((checkbox) => checkbox.checked)
+      .map((checkbox) => checkbox.value);
   }
 
   function update() {
@@ -46,8 +47,8 @@ export default async function initCatalog() {
     });
   }
 
-  typeCheckboxes.forEach((c) =>
-    c.addEventListener("change", () => {
+  typeCheckboxes.forEach((checkbox) =>
+    checkbox.addEventListener("change", () => {
       currPage = 1;
       update();
     }),
@@ -58,12 +59,17 @@ export default async function initCatalog() {
     update();
   });
 
-  statuses.forEach((r) =>
-    r.addEventListener("change", () => {
+  statuses.forEach((input) =>
+    input.addEventListener("change", () => {
       currPage = 1;
       update();
     }),
   );
+
+  catalogForm.addEventListener("reset", () => {
+    currPage = 1;
+    requestAnimationFrame(update);
+  });
 
   update();
 }

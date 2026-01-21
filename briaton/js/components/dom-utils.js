@@ -20,17 +20,23 @@ export function imgEl({ src, className, alt, width, height } = {}) {
   return img;
 }
 
-export function svgIcon({ className, width, height, href, ariaHidden = true } = {}) {
-  const SVG_NS = 'http://www.w3.org/2000/svg';
-  const svg = document.createElementNS(SVG_NS, 'svg')
-  if (className) svg.classList.add(className)
-  if (width) svg.setAttribute('width', width);
-  if (height) svg.setAttribute('height', height);
-  if (ariaHidden) svg.setAttribute('aria-hidden', 'true');
+export function svgIcon({
+  className,
+  width,
+  height,
+  href,
+  ariaHidden = true,
+} = {}) {
+  const SVG_NS = "http://www.w3.org/2000/svg";
+  const svg = document.createElementNS(SVG_NS, "svg");
+  if (className) svg.classList.add(className);
+  if (width) svg.setAttribute("width", width);
+  if (height) svg.setAttribute("height", height);
+  if (ariaHidden) svg.setAttribute("aria-hidden", "true");
 
-  const use = document.createElementNS(SVG_NS, 'use');
-  if (href) use.setAttribute('href', href);
-  svg.append(use)
+  const use = document.createElementNS(SVG_NS, "use");
+  if (href) use.setAttribute("href", href);
+  svg.append(use);
 
   return svg;
 }

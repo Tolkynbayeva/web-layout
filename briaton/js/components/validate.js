@@ -39,12 +39,20 @@ export default function validateForm() {
     .onSuccess(async (e) => {
       e.preventDefault();
       const form = e.target;
+      if (form.dataset.sending === "true") return;
+      form.dataset.sending = "true";
+      const submitBtn = form.querySelector(".questions__btn");
+      if (submitBtn) submitBtn.disabled = true;
+
       try {
         await sendForm(form);
         showSuccessModal();
         form.reset();
       } catch (e) {
         showErrorModal();
+      } finally {
+        delete form.dataset.sending;
+        if (submitBtn) submitBtn.disabled = false;
       }
     });
 }

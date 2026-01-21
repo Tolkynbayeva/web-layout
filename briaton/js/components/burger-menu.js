@@ -3,7 +3,7 @@ export default function burgerMenu() {
   const closeBtn = document.querySelector(".main-menu__close");
   const wrapperMenu = document.querySelector(".main-menu");
 
-  if (!openBtn || !closeBtn || !wrapperMenu) return
+  if (!openBtn || !closeBtn || !wrapperMenu) return;
 
   openBtn.addEventListener("click", () => {
     wrapperMenu.classList.add("main-menu--active");

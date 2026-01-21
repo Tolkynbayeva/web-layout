@@ -1,0 +1,54 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 3;
+
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba($color-black, .7);
+  }
+
+  &__window {
+    max-width: 719px;
+    width: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 60px;
+    background-color: $color-white;
+    border-radius: 16px;
+  }
+
+  &__btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__icon {
+    margin: 0 0 16px;
+  }
+
+  &__title {
+    margin: 0 0 20px;
+    font-size: 24px;
+    line-height: 130%;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 18px;
+    line-height: 140%;
+  }
+}
